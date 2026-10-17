@@ -1,0 +1,60 @@
+/* A shallow raised surface, keeping the solid Peach & Aqua palette and layout. */
+:root {
+ --depth-card:inset 0 1px 0 #ffffffd9,0 2px 3px #5b463b08,0 7px 17px #5b463b0d;
+ --depth-control:inset 0 1px 0 #ffffff80,inset 0 -1px 0 #2432470a,0 2px 0 #24324719,0 3px 6px #2432470c;
+ --depth-pressed:inset 0 2px 4px #24324724,0 1px 0 #ffffffb3;
+}
+body[data-page] .app-shell :is(.card,.board,.reference-card,.room-card,.setting-card,.coach-report-task,.coach-profile-card,.coach-average-card,.report-details,.today-banner,.dashboard-panel,.subject-card) {
+ box-shadow:var(--depth-card);
+}
+body[data-page] .app-shell :is(.subject-card,.today-banner) {
+ box-shadow:inset 0 1px 0 #ffffffc9,inset 0 -1px 0 #2432470b,0 3px 5px #5b463b09,0 8px 17px #5b463b10;
+}
+body[data-page] .app-shell :is(.today-list>button,.shortcut-grid>a,.shortcut-grid>button) {
+ box-shadow:var(--depth-card);
+ border-bottom-color:#24324720;
+}
+body[data-page] .app-shell :is(.button,.button.primary,.button.green,.button.danger,.icon-button,.room-chip,.score-mode,.attendance-choice,.quick-status,.attendance-other-options>button),
+#dialog :is(.button,.icon-button,.quick-status,.pending-task-list>button,.subject-room-options>button,.subject-grade-options>button) {
+ box-shadow:var(--depth-control);
+}
+body[data-page] .app-shell :is(.button.primary,.button.green),body[data-page] :is(.attendance-save,.score-save-bar) .button {
+ box-shadow:inset 0 1px 0 #ffffff66,inset 0 -1px 0 #8c331523,0 3px 0 #a93d202b,0 5px 9px #d4542521;
+}
+body[data-page] .app-shell :is(.professional-subject-icon,.period-pill) {
+ box-shadow:inset 0 1px 0 #ffffff70,0 2px 3px #24324714;
+}
+body[data-page] .app-shell .attendance-roster {
+ box-shadow:inset 0 1px 0 #fff,0 3px 10px #5b463b09;
+}
+body[data-page] .app-shell :is(.score-input,.single-score-table .score-input,input,select,textarea,.search-field) {
+ box-shadow:inset 0 1px 2px #24324708,0 1px 0 #ffffffeb;
+}
+body[data-page] .app-shell .search-field input {box-shadow:none}
+body[data-page] .app-shell :is(.attendance-choice.selected,.room-chip.active,.score-mode.active) {
+ box-shadow:var(--depth-pressed);
+}
+body[data-page] .app-shell :is(.button,.icon-button,.room-chip,.score-mode,.attendance-choice,.quick-status,.attendance-other-options>button,.today-list>button,.subject-card,.shortcut-grid>a,.shortcut-grid>button):active,
+#dialog :is(.button,.icon-button,.quick-status,.pending-task-list>button,.subject-room-options>button,.subject-grade-options>button):active {
+ box-shadow:var(--depth-pressed);
+ transform:translateY(1px);
+}
+body[data-page] .app-shell :is(button:disabled,.button:disabled) {
+ box-shadow:inset 0 1px 0 #ffffff99;
+ transform:none;
+}
+.mobile-nav a.active {
+ box-shadow:inset 0 1px 0 #ffffff66,inset 0 -1px 0 #8c33151a,0 2px 0 #a93d2026,0 4px 7px #d454251a;
+}
+.mobile-nav a:active {box-shadow:var(--depth-pressed)}
+body[data-page] .app-shell .coach-setting-row {box-shadow:none}
+@media(max-width:850px){
+ body[data-page=home] .app-shell :is(.subjects-section,.today-todo) {box-shadow:none}
+ body[data-page=attendance] .app-shell .attendance-board {box-shadow:none}
+ body[data-page] .app-shell .coach-course-heading {
+  box-shadow:inset 0 1px 0 #ffffffd9,0 3px 8px #24324708;
+ }
+}
+@media print {
+ body[data-page] .app-shell :is(.card,.board,.reference-card,.room-card,.setting-card,.report-details,.dashboard-panel),.mobile-nav a {box-shadow:none}
+}

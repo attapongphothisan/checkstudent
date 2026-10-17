@@ -1,0 +1,43 @@
+/* Reusable mini-banner cards. Live labels stay in the quiet upper part. */
+body[data-page=home] .app-shell .illustrated-card {position:relative;isolation:isolate;overflow:hidden;background:#FFF2DF!important;border:1px solid #ECD5BA!important;box-shadow:inset 0 1px 0 #fff9,0 4px 10px #9b5b2010!important}
+.illustrated-card .card-art {position:absolute;right:0;bottom:0;width:100%;height:auto;max-width:none;z-index:-1;pointer-events:none;user-select:none;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 20%,#000 100%);mask-image:linear-gradient(to bottom,transparent 0%,#000 20%,#000 100%)}
+body[data-page=home] .app-shell .subject-card.illustrated-card {min-height:246px;padding:19px;border-radius:19px;display:flex;align-items:flex-start;justify-content:flex-start;gap:0}
+.subject-card.illustrated-card .professional-subject-icon {display:none}
+.subject-card.illustrated-card .subject-copy {position:relative;z-index:1;display:block;padding-right:23px}
+body[data-page=home] .app-shell .subject-card.illustrated-card .subject-copy b {font-size:19px;font-weight:500;line-height:1.5;color:#794E32}
+body[data-page=home] .app-shell .subject-card.illustrated-card .subject-copy>small {font-size:12px;color:#8B6D54;margin-top:5px}
+body[data-page=home] .app-shell .subject-card.illustrated-card .subject-copy em {font-size:12px;color:#8B6D54;margin-top:6px;font-weight:400}
+.subject-card.illustrated-card .chevron {top:17px;right:14px;bottom:auto;width:26px;height:26px;background:#FFFDF9c9;color:#A8744F;z-index:2}
+body[data-page=home] .app-shell .subject-card.subject-blue.illustrated-card {background:#FFF3D8!important;border-color:#E9D5AA!important}
+body[data-page=home] .app-shell .shortcut-grid>.illustrated-card {min-height:190px;padding:16px;border-radius:16px;align-items:flex-start;gap:7px}
+.shortcut-grid>.illustrated-card>.icon {display:none}
+.shortcut-grid>.illustrated-card>span,.shortcut-grid>.illustrated-card>b {position:relative;z-index:1}
+body[data-page=home] .app-shell .shortcut-grid>.illustrated-card>span {font-size:13px;color:#8E6D52;line-height:1.6}
+body[data-page=home] .app-shell .shortcut-grid>.illustrated-card>b {font-size:19px;color:#794E32;font-weight:500}
+.shortcut-grid>.illustrated-card .card-art {width:auto;height:100%;right:0;bottom:0;object-fit:contain;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 25%,#000 100%);mask-image:linear-gradient(to right,transparent 0%,#000 25%,#000 100%)}
+/* On compact cards the art sits below the label, so text is never embedded in it. */
+@media(max-width:850px){
+ body[data-page=home] .app-shell .subject-card.illustrated-card {min-height:234px;padding:15px;border-radius:18px}
+ body[data-page=home] .app-shell .subject-card.illustrated-card .subject-copy b {font-size:17px}
+ body[data-page=home] .app-shell .subject-card.illustrated-card .subject-copy>small,body[data-page=home] .app-shell .subject-card.illustrated-card .subject-copy em {font-size:11px}
+ .subject-card.illustrated-card .card-art {height:auto;width:100%;bottom:0}
+ .subject-card.illustrated-card .chevron {top:14px;right:10px;width:23px;height:23px}
+ body[data-page=home] .app-shell .shortcut-grid>.illustrated-card {min-height:176px;padding:11px 9px;gap:6px;border-radius:13px}
+ .shortcut-grid>.illustrated-card .card-art {width:100%;height:auto;right:0;bottom:0;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 20%,#000 100%);mask-image:linear-gradient(to bottom,transparent 0%,#000 20%,#000 100%)}
+ body[data-page=home] .app-shell .shortcut-grid>.illustrated-card>span {font-size:11px;line-height:1.6}
+ body[data-page=home] .app-shell .shortcut-grid>.illustrated-card>b {font-size:15px;line-height:1.5}
+}
+@media(max-width:360px){
+ body[data-page=home] .app-shell .subject-card.illustrated-card {min-height:221px;padding:13px}
+ body[data-page=home] .app-shell .subject-card.illustrated-card .subject-copy b {font-size:16px}
+ body[data-page=home] .app-shell .shortcut-grid>.illustrated-card {min-height:170px;padding:10px 7px}
+ body[data-page=home] .app-shell .shortcut-grid>.illustrated-card>span {font-size:10px}
+ body[data-page=home] .app-shell .shortcut-grid>.illustrated-card>b {font-size:13px}
+}
+/* The small lesson cards share the banner's warm paper treatment. */
+body[data-page=home] .app-shell .today-list>button {background:#FFF8ED;border-color:#EDDAC1;box-shadow:inset 0 1px 0 #fff,0 3px 7px #9b5b200a}
+body[data-page=home] .app-shell .today-list .period-pill {background:#F6DFC5;box-shadow:inset 0 1px 0 #ffffffa8}
+body[data-page=home] .app-shell .today-list .todo-time {background:#FFFDF9b3;padding:6px 8px;border-radius:999px;align-self:center}
+@media(max-width:360px){body[data-page=home] .app-shell .today-list .todo-time {padding:5px 4px}}
+.subject-card.illustrated-card .subject-copy {padding-bottom:120px}
+.subject-card.illustrated-card .card-art {max-width:230px}

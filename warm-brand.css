@@ -1,0 +1,86 @@
+/* Warm Checkeng: terracotta, apricot and paper cream, with semantic status colors. */
+:root {--brand-rust:#B94E2F;--brand-orange:#DE7846;--brand-apricot:#F2B983;--brand-paper:#FBF7F0;--brand-ink:#3C302B;--brand-muted:#786A60;--blue:#B94E2F;--navy:#3C302B;--ink:#3C302B;--muted:#786A60;--line:#E8DED1;--wash:#FBF7F0;--surface-tint:#FBEADD;--primary-fill:#B94E2F;--primary-start:#B94E2F;--primary-end:#B94E2F;--focus:#A4482D;--depth-card:inset 0 1px 0 #fff,0 3px 9px #6f402108;--depth-control:0 1px 2px #6f40210c}
+body[data-page],body[data-page] .main-shell,body[data-page] main {background:#FBF7F0;color:#3C302B}
+body[data-page] .app-shell :is(.app-wordmark,.app-wordmark>span),body[data-page=home] .coach-mobile-brand .app-wordmark>span {color:#A4482D}
+#sidebar {background:#FFFCF7;border-color:#E8DED1}#sidebar .brand small {color:#88786d}#sidebar .nav-item {color:#786A60}#sidebar .nav-item.active,#sidebar .nav-item.active .icon {background:#FBEADD;color:#AA4A2D}#sidebar .nav-item.active .icon {background:transparent}
+.sidebar-term {background:#F3EBDD;border-color:#E8DDCB;color:#7D6A5A}.sidebar-term .icon {color:#9b795e}#sidebar .side-user .avatar {background:#F5DECB;color:#AA4A2D}
+.topbar,body[data-page=home] .topbar {background:#FBF7F0;border-color:#E8DED1}
+body[data-page] .app-shell .icon-button {color:#8E7563;border-color:#E8DED1}
+body[data-page] .app-shell .button,body[data-page] .app-shell .button:not(.primary):not(.green) {color:#796151;border-color:#E8D5C3;background:#FFFDFC;box-shadow:0 1px 2px #6f402108}
+body[data-page] .app-shell :is(.button.primary,.button.green),body[data-page] :is(.attendance-save,.score-save-bar) .button {background:#B94E2F;color:#fff;border-color:#B94E2F;box-shadow:0 3px 6px #b94e2f20}
+body[data-page] .app-shell :is(.button.primary,.button.green):hover {background:#9D3F25;color:#fff;border-color:#9D3F25}
+body[data-page] .app-shell .button.danger {background:#fff0ec;color:#A03E34;border-color:#E5C2B9}
+body[data-page] .app-shell :is(button:disabled,.button:disabled) {background:#EFE5DB;color:#9D8B7D;border-color:#E4D6C8;box-shadow:none}
+body[data-page] .app-shell :is(.card,.board,.reference-card,.room-card,.setting-card,.coach-report-task,.coach-profile-card,.coach-average-card,.report-details,.dashboard-panel) {background:#fff;border-color:#E8DED1;box-shadow:0 3px 9px #6f402108}
+body[data-page] .app-shell :is(main h1,main h2,main h3,.coach-report-heading,.coach-report-task h2,.report-course-averages h2,.report-subject-averages h2,.report-attendance-overview h2) {color:#3C302B}
+body[data-page] .app-shell :is(.person b,.score-table .person b,.attendance-row .person b,.todo-course,.course-average-row>b,.course-average-row>strong,.coach-setting-row,.button.coach-setting-row) {color:#57463C}
+body[data-page] .app-shell :is(.subject-copy>small,.subject-copy em,.subject-blue .subject-copy>small,.subject-blue .subject-copy em,.todo-time,.today-list .todo-course small,.home-intro>div>p:last-child,.shortcut-grid span,.coach-report-count small,.attendance-save>span,.score-choice,.summary-note,.course-period,.coach-report-title small,.app-footer,.muted) {color:#7E6D60}
+body[data-page] .app-shell :is(.attendance-row .student-number,.attendance-roster-head,.attendance-roster-head>b,.score-table th,table th) {color:#8B7564}
+body[data-page] .app-shell :is(input,select,textarea,.score-input,.single-score-table .score-input,.search-field) {background:#fff;color:#614C3D;border-color:#E6D6C6}
+body[data-page] .app-shell :is(input,select,textarea):focus-visible,button:focus-visible,a:focus-visible {outline-color:#B86542}
+.notice {background:#F6EDDF;border-color:#E8D9C6;color:#8B7664}.page-kicker {color:#9B795E}.local-first-badge {background:#FFF8EF;border-color:#EBDAC7;color:#9B795E}.local-first-badge .icon {color:#B18461}
+/* One generated image, intrinsic aspect ratio preserved. Only empty scenery may crop. */
+body[data-page=home] .app-shell .today-banner {position:relative;isolation:isolate;overflow:hidden;background:#FFF0DA!important;border:1px solid #EDD4B4;border-radius:22px;min-height:235px;padding:25px 30px;box-shadow:inset 0 1px 0 #fff9,0 5px 13px #9b5b2010}
+.today-banner .warm-banner-art {position:absolute;right:0;top:0;height:100%;width:auto;max-width:none;object-fit:contain;z-index:-1;pointer-events:none;user-select:none}
+.today-banner>div {position:relative;z-index:1;max-width:55%}.today-banner p {color:#AD6B40;font-size:14px}
+body[data-page=home] .app-shell .today-banner .today-period-count {color:#773C25!important;font-size:42px;margin:5px 0 13px}.today-period-count>span {color:#8D4D2D;font-size:21px}
+.today-banner .today-date {background:#FFFDF9e8;border-color:#EAD0B2;color:#9D613D}.today-banner .today-date>.icon {color:#B77F51}.today-banner .today-guidance,body[data-page] .app-shell .today-banner .today-guidance {color:#9D6D47;font-size:12px;line-height:1.7;max-width:290px}
+body[data-page] .app-shell .today-list>button {border-color:#EDE1D3;box-shadow:0 2px 4px #6f402107;background:#fff}
+body[data-page] .app-shell .period-pill {background:#FBE4CF;color:#B46B3D}body[data-page] .app-shell :is(.period-pill.period-2,.period-pill.period-3) {background:#FAEDCF;color:#9F803C}.todo-chevron {color:#C3A187}.today-list .todo-course small {color:#A98B74}.dashboard-panel-heading>a,.subjects-section .dashboard-panel-heading>a {color:#B26D43}
+body[data-page=home] .app-shell .subject-card,body[data-page=home] .app-shell :is(.subject-card.subject-pink,.subject-card.subject-neutral) {background:#FCE8D9;border-color:#F1D5BE;box-shadow:inset 0 1px 0 #fff9,0 2px 6px #6f402107}
+body[data-page=home] .app-shell .subject-card.subject-blue {background:#F9EDCC;border-color:#ECDDAD}
+body[data-page] .app-shell .professional-subject-icon {background:#F5CCAA;color:#B26D43}.professional-subject-icon .icon {color:#B26D43}body[data-page] .app-shell .subject-blue .professional-subject-icon {background:#EEDBA3}.subject-blue .professional-subject-icon .icon {color:#A38339}
+body[data-page=home] .subject-copy b,.subject-blue .subject-copy b {color:#794E32}.subject-card .chevron {background:#FFFDF9b8;color:#B38762}
+body[data-page] .app-shell .shortcut-grid>:is(a,button) {background:#FCF2E6!important;border-color:#EEDDC7!important;color:#9D795D}.shortcut-grid>:is(a,button):nth-child(2) {background:#FDF3E0!important;border-color:#EDDFC3!important}.shortcut-grid>:is(a,button):nth-child(3) {background:#F8E8DC!important;border-color:#EAD4C3!important}.shortcut-grid>:is(a,button) .icon,.shortcut-grid>:is(a,button):nth-child(n) .icon {color:#B68A65}.shortcut-grid b {color:#8E603D}
+body[data-page] .app-shell .coach-course-heading {background:#FFF8EE;border-color:#EDDBC6}.coach-course-heading h1 {color:#794E32}body[data-page] .app-shell .coach-course-heading b {color:#B47B51}body[data-page] .app-shell .coach-course-heading .button {background:#FBE4CF;color:#AD7148;border-color:#F0D3B9}
+body[data-page] .app-shell .course-strip .subject-banner {background:#FAEBDD;border-color:#EED9C4;color:#AF7F59}.subject-banner .sport {background:#F2D9BD;color:#B98C64}.room-chip.active,.room-chip.active small,.room-chip.active strong {background:#FAE5D2;color:#B77C50;border-color:#EBD1B7}
+body[data-page] .app-shell .attendance-roster {border-color:#E8DED1;box-shadow:0 2px 6px #6f402107}.attendance-roster-head {background:#F5EEE4}.attendance-row,.attendance-row:nth-child(odd),.attendance-row:last-child {border-color:#F2E8DC}.attendance-other-options>span {color:#B99B80}
+body[data-page] .app-shell .attendance-other-options button {border-color:#E9D8C6;color:#AA8565}.attendance-other-options button[aria-pressed=true] {background:#F7E5D4;color:#A87D59}
+body[data-page] .app-shell .session-control {border-color:#E8DACA}.session-control .date-control input,.session-control .date-control select {color:#A08268;border-color:#E8DACA}
+body[data-page] .app-shell .search-field {border-color:#E8DACA}.search-field .icon {color:#B89B81}body[data-page] .app-shell .search-field input::placeholder {color:#B09277}
+body[data-page] .app-shell :is(.attendance-save,.score-save-bar) {background:#FBF7F0;border-color:#E8DED1}.score-board .score-save-bar {background:#FBF7F0}body[data-page] .app-shell :is(.attendance-save,.score-save-bar) .button {background:#B94E2F;color:#fff;border-color:#B94E2F}
+body[data-page] .app-shell :is(.attendance-save,.score-save-bar) .button:disabled {background:#EFE5DB;color:#9D8B7D;border-color:#E4D6C8}
+body[data-page] .app-shell .score-board .score-select-label {background:#FFF8EC;border-color:#F0DEC3}.score-choice select {color:#9C7657}.score-mode-tabs {background:#F1E8DA}.score-mode.active,.score-mode-tabs .score-mode.active {background:#fff;color:#B97B4B;border-color:#E9D3B9}
+.score-table th,table th {background:#F6EEE2}.score-table td,table td {border-color:#F0E4D5}.single-score-table .score-input:focus {outline-color:#C28B63}.score-input:placeholder-shown {border-color:#DEC7AF}
+.report-tabs .primary,.export-kind .primary {background:#F9E4D0;color:#B2794D;border-color:#E8CCAE}.coach-report-count.total {background:#FBE8D7}.coach-report-count.present {background:#EBF4E9}.coach-report-count.absent {background:#FBE9E5}.coach-report-count.leave {background:#FBF1D8}body[data-page] .app-shell .coach-report-count b {color:#996E4A}
+.course-average-track {background:#F2E6D7}.course-average-track i {background:#D99A69}.course-average-track i.aqua {background:#DBB363}.coach-histogram i {background:#D99A69}.coach-histogram>div:nth-child(2n) i {background:#DBB363}.coach-task-metrics>div {background:#FCF2E4;border-color:#EFDEC7}
+.coach-average-card>.icon:first-child {background:#F8E8D5;color:#C79B73}.coach-average-card>.icon:last-child {color:#C79B73}body[data-page] .app-shell .coach-profile-card {background:#FFFAF1}.professional-profile-icon {background:#F5DEC7;color:#C59D78}.coach-setting-row>.icon,.coach-setting-row:nth-child(2n)>.icon {background:#F8ECDD;color:#C3A07F}.coach-setting-row:hover {background:#FFF8ED;color:#C09A76}
+.week-item,.week-item.pe {background:#FFF5E6;border-color:#F0DDC2;color:#BF9A74}.week-item.pe {background:#FBF1D7;border-color:#EFE2B9;color:#BCA16D}.weekday>h3 {background:#FFF7EA;color:#C8A580}.room-card:nth-child(2n) {background:#FFFCF6}
+.dialog-head {background:#FFF4E3;color:#C5A079}dialog {border-color:#EBDCBE}.pending-task-list>button {background:#FFFAF0;color:#C7A580;border-color:#EFDFC5}body[data-page] .app-shell .pending-task-list>button {color:#A57850}body[data-page] .app-shell .pending-task-list span {color:#BD956C}
+.mobile-nav {background:#FFFCF6;border-color:#E8DED1}.mobile-nav a {color:#B1957C}.mobile-nav a.active,.mobile-nav a.active .icon {color:#fff}.mobile-nav a.active {background:#B94E2F;box-shadow:0 2px 5px #b94e2f22}
+@media(max-width:850px){
+ body[data-page] .topbar,body[data-page=home] .topbar,body[data-page=settings] .topbar {background:#FBF7F0;border-color:#E8DED1}body[data-page] .app-shell .coach-mobile-brand .app-wordmark {color:#A4482D}
+ body[data-page=home] .app-shell .today-banner {min-height:205px;padding:20px 21px;background:#FFF0DA!important;border-color:#EDD4B4}.today-banner>div {max-width:55%}body[data-page=home] .app-shell .today-banner .today-period-count {font-size:34px;margin:5px 0 11px}.today-period-count>span {font-size:18px}.today-banner p {font-size:12px}.today-banner .today-date {font-size:10px;padding:5px 9px}.today-banner .today-guidance,body[data-page] .app-shell .today-banner .today-guidance {font-size:10px;max-width:200px;margin-top:11px}
+ body[data-page=home] .app-shell .quick-shortcuts {background:#FFFAF2!important;border-color:#EFDEC6}.mobile-nav {background:#FFFCF6;border-color:#E8DED1}.mobile-nav a.active {background:#B94E2F;color:#fff}
+ body[data-page] .app-shell :is(.attendance-save,.score-save-bar) {background:#FBF7F0}.score-board .score-save-bar {background:#FBF7F0}
+}
+@media(max-width:360px){body[data-page=home] .app-shell .today-banner {min-height:200px;padding:18px}.today-banner>div {max-width:56%}body[data-page=home] .app-shell .today-banner .today-period-count {font-size:31px}.today-period-count>span {font-size:16px}.today-banner .today-date {font-size:10px;padding:5px 7px}.today-banner .today-guidance,body[data-page] .app-shell .today-banner .today-guidance {font-size:10px;line-height:1.6}}
+/* Dark secondary copy is intentional: warm surfaces should still be readable. */
+body[data-page] .app-shell :is(.subject-copy>small,.subject-copy em,.subject-blue .subject-copy>small,.subject-blue .subject-copy em,.todo-time,.today-list .todo-course small,.shortcut-grid span,.coach-report-count small,.attendance-save>span,.summary-note,.course-period,.coach-report-title small,.app-footer,.muted) {color:#7E6D60}
+body[data-page] .app-shell .search-field input::placeholder {color:#8C7664}.mobile-nav a {color:#897363}.mobile-nav a.active {color:#fff}
+@media(max-width:480px){
+ .today-banner .warm-banner-art {height:92%;top:auto;bottom:0;right:0}
+ .today-banner .today-guidance,body[data-page] .app-shell .today-banner .today-guidance {display:none}
+}
+@media(max-width:360px){
+ .today-banner .warm-banner-art {height:82%;top:auto;bottom:0;right:0}
+ .today-banner>div {max-width:57%}.today-banner p {font-size:11px}
+}
+body[data-page] .app-shell .attendance-choice.other {background:#F0E9E3;color:#78675A;border-color:#E3D6CC}
+.attendance-choice.other.selected {background:#7A695C!important;color:#fff!important;border-color:#615044!important}
+body[data-page] .app-shell :is(.score-mode.active,.score-mode-tabs .score-mode.active) {color:#9B4F32}
+body[data-page] .app-shell :is(.attendance-row .student-number,.attendance-roster-head,.attendance-roster-head>b,.score-table th,table th) {color:#7B6757}
+body[data-page] .app-shell .coach-course-heading b {color:#9A6A46}
+body[data-page] .app-shell .pending-task-list>button {color:#7D573A}
+body[data-page] .app-shell .pending-task-list span {color:#9C633D}
+/* Feather only the empty left scenery into the wide desktop surface. */
+.today-banner .warm-banner-art {
+ -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 18%,#000 100%);
+ mask-image:linear-gradient(to right,transparent 0%,#000 18%,#000 100%);
+}
+
+/* White workspace; warm cards and the hero keep their existing brand colors. */
+:root {--brand-paper:#FFFFFF;--studio-paper:#FFFFFF;--wash:#FFFFFF}
+body[data-page],body[data-page] .main-shell,body[data-page] main,body[data-page] .topbar,body[data-page=home] .topbar,body[data-page=settings] .topbar,#sidebar,.mobile-nav,.app-footer {background:#FFFFFF}
+body[data-page] .app-shell :is(.attendance-save,.score-save-bar),.score-board .score-save-bar {background:#FFFFFF}
+@media(max-width:850px){body[data-page] main,body[data-page] .topbar,body[data-page=home] .topbar,body[data-page=settings] .topbar,.mobile-nav {background:#FFFFFF}}

@@ -1,0 +1,52 @@
+/* Reference refinement: vivid coral/aqua and one-line attendance table on phones. */
+:root {--coral:#FF6842;--primary-fill:#FF6842;--primary-start:#FF6842;--primary-end:#FF6842;--blue:#d54d27}
+.app-wordmark {font-style:italic;font-weight:700}.app-wordmark>span,body[data-page=home] .coach-mobile-brand .app-wordmark>span {color:#e9532d}
+.button.primary,.button.green,.attendance-save .button.green,.score-save-bar .button {background:#eb552e;border-color:#d64b29;color:#fff;font-weight:600;font-size:19px}
+.button.primary:hover,.button.green:hover {background:#d74723;color:#fff;border-color:#c53e1c}
+.button:disabled,.attendance-save .button:disabled {background:#e9edf1;border-color:#d5dbe2;color:#697486}
+.dashboard-panel-heading>a,.subjects-section .dashboard-panel-heading>a {color:#c84a24}
+.period-pill,.period-pill.period-0 {background:#FF7047;color:#243247}.period-pill.period-1 {background:#FFB378;color:#243247}.period-pill.period-2,.period-pill.period-3 {background:#36c3db;color:#18394b}
+body[data-page=home] .subject-card,body[data-page=home] .subject-card.subject-pink,body[data-page=home] .subject-card.subject-neutral {background:#FFE1B9;border-color:#f3d7b5}
+body[data-page=home] .subject-card.subject-blue {background:#A3EDF5;border-color:#89dce8}
+.professional-subject-icon {background:#FF7047;color:#fff}.professional-subject-icon .icon {color:#fff;stroke-width:2}.subject-blue .professional-subject-icon {background:#21bfd9}.subject-blue .professional-subject-icon .icon {color:#fff;stroke-width:2}
+.shortcut-grid>:is(a,button):nth-child(1) .icon {color:#ed651e}.shortcut-grid>:is(a,button):nth-child(2) .icon {color:#079ab4}.shortcut-grid>:is(a,button):nth-child(3) .icon {color:#00a79e}
+.mobile-nav a.active {background:#FF6842;color:#243247}.mobile-nav a.active .icon {color:#fff}
+.coach-course-heading .button {background:#FFE1C4;color:#77421f;border-color:#f4d1ad;font-size:14px}
+.attendance-counts,.attendance-extras {display:none}
+.attendance-board {overflow:visible}
+.attendance-roster {border:1px solid #e8e5df;border-radius:13px;overflow:hidden;background:#fff}
+.attendance-roster-head,.attendance-row {grid-template-columns:32px minmax(0,1fr) 300px;gap:10px;margin:0;border-radius:0}
+.attendance-roster-head {background:#f4f1eb;color:#344057;min-height:42px;font-size:13px}
+.attendance-roster-head>div {display:block;text-align:center}.attendance-roster-head>div>span {display:none}.attendance-roster-head>div:before {content:'สถานะ'}
+.attendance-row,.attendance-row:nth-child(odd),.attendance-row:last-child {border:0;border-bottom:1px solid #eeece8;border-radius:0;background:#fff;min-height:58px;padding:7px 10px}
+.attendance-row:last-child {border-bottom:0}
+.attendance-choice-tabs {grid-column:auto;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+.attendance-choice,.attendance-choice.present,.attendance-choice.absent,.attendance-choice.leave,.attendance-choice.other {min-height:44px;font-size:13px;padding:7px 2px;border-radius:8px;border:1px solid transparent;font-weight:400;box-shadow:none}
+.attendance-choice.present {background:#d9f0e3;color:#21643e}.attendance-choice.absent {background:#ffd0ca;color:#a33035}.attendance-choice.leave {background:#FFDF9A;color:#6d4b14}.attendance-choice.other {background:#e1e6e9;color:#465768}
+.attendance-choice.present.selected {background:#218453;color:#fff;border:2px solid #196b46}.attendance-choice.absent.selected {background:#cc3946;color:#fff;border:2px solid #a62b36}.attendance-choice.leave.selected {background:#FFC55E;color:#513914;border:2px solid #895c14}.attendance-choice.other.selected {background:#607082;color:#fff;border:2px solid #455667}
+.attendance-choice>span {display:none}.attendance-other-options {grid-column:2/-1}
+.attendance-row .student-number {background:transparent;font-weight:400;color:#435168;border-radius:0}
+.report-attendance-overview,.report-course-averages,.report-subject-averages,.coach-report-task {box-shadow:0 3px 12px #9e6c3210;border-color:#f0e7dc}
+.course-average-track i {background:#FF7047}.course-average-track i.aqua {background:#2bc0d7}.coach-histogram i {background:#FF7047}.coach-histogram>div:nth-child(2n) i {background:#2bc0d7}
+.coach-report-task .export-excel,.export-buttons .button.export-excel {background:#397956;color:#fff;border-color:#2b6544;font-size:16px}.coach-report-task .export-pdf,.export-buttons .button.export-pdf {background:#c94339;color:#fff;border-color:#bb3b34;font-size:16px}
+@media(max-width:850px){
+ .coach-mobile-brand .app-wordmark {font-style:normal;font-weight:600;font-size:23px}body[data-page=home] .coach-mobile-brand .app-wordmark {font-style:italic;font-weight:700}
+ .coach-course-heading {margin-bottom:12px}.coach-course-heading>div {column-gap:7px}.coach-course-heading h1 {font-size:23px}.coach-course-heading b {font-size:16px;color:#d64e29}
+ .session-control {padding:5px 8px;border:0;background:transparent;margin-bottom:5px}.session-control .session-symbol {display:none}.session-control .date-control input,.session-control .date-control select {font-size:16px;min-height:44px;background:#fff;border:1px solid #e8e5df;padding:6px}
+ .attendance-tools {padding:7px 0 12px}.attendance-tools .quick-tool {min-width:44px;width:44px;padding:9px;font-size:0}.attendance-tools .quick-tool .icon {width:21px;height:21px}
+ .attendance-board .attendance-roster {display:block;border-radius:12px;gap:0}
+ .attendance-roster-head,.attendance-row,.attendance-row:nth-child(odd),.attendance-row:last-child {display:grid;grid-template-columns:25px minmax(0,1fr) 188px;gap:5px;padding:6px;min-height:56px;border-radius:0;border:0;border-bottom:1px solid #eeece8}
+ .attendance-roster-head {min-height:39px;background:#f4f1eb;font-size:12px}.attendance-roster-head>span {font-size:10px;white-space:nowrap}.attendance-roster-head>b {font-size:12px;font-weight:400}
+ .attendance-row .person {min-height:32px}.attendance-row .person b {font-size:13px;font-weight:400;line-height:1.5;overflow-wrap:anywhere}.attendance-row .student-number {min-height:30px;font-size:12px;background:transparent;font-weight:400}
+ .attendance-choice-tabs {grid-column:auto;gap:4px;padding:0}.attendance-choice,.attendance-choice.present,.attendance-choice.absent,.attendance-choice.leave,.attendance-choice.other {min-width:44px;min-height:44px;font-size:12px;border-radius:7px;padding:7px 1px}
+ .attendance-choice.present.selected {background:#218453;color:#fff;border:2px solid #196b46}.attendance-choice.absent.selected {background:#cc3946;color:#fff;border:2px solid #a62b36}.attendance-choice.leave.selected {background:#FFC55E;color:#513914;border:2px solid #895c14}.attendance-choice.other.selected {background:#607082;color:#fff;border:2px solid #455667}
+ .attendance-other-options {grid-column:2/-1;padding:2px 0 4px;gap:6px}.attendance-other-options span {font-size:12px}.attendance-other-options button {padding:7px 10px;font-size:12px}
+ .attendance-save .button.green,.score-save-bar .button {background:#eb552e;color:#fff;border-color:#d64b29;font-size:19px;font-weight:600;min-height:54px}
+ .attendance-save .button:disabled {background:#e9edf1;color:#697486;border-color:#d5dbe2}
+ .attendance-save>span {font-size:11px}.attendance-save {padding:8px 13px;gap:6px}
+ .mobile-nav a.active {background:#FF6842;color:#243247}.mobile-nav a.active .icon {color:#fff}
+}
+@media(max-width:360px){
+ .attendance-roster-head,.attendance-row,.attendance-row:nth-child(odd),.attendance-row:last-child {grid-template-columns:21px minmax(0,1fr) 188px;gap:4px;padding:6px 4px}
+ .attendance-row .person b {font-size:12px;line-height:1.5}.attendance-row .student-number {font-size:11px}.attendance-roster-head>span {font-size:9px}.attendance-roster-head>b {font-size:11px}
+}

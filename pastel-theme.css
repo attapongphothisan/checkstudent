@@ -1,0 +1,170 @@
+/* Four solid pastel surfaces, shared by every route. No decorative gradients. */
+:root {
+ --pastel-coral:#FFB3B3; --pastel-peach:#FFDBA4; --pastel-yellow:#FFE9AE; --pastel-blue:#C1EFFF;
+ --blue:#29364d; --navy:#29364d; --ink:#29364d; --muted:#596477; --line:#dce2e8;
+ --wash:#f8fafb; --surface:#fff; --surface-soft:#fff; --surface-tint:#C1EFFF;
+ --primary-fill:#FFB3B3; --primary-start:#FFB3B3; --primary-end:#FFB3B3;
+ --success-fill:#C1EFFF; --success-start:#C1EFFF; --success-end:#C1EFFF;
+ --brand-wash:#C1EFFF; --focus:#29364d; --border-control:#b9c4d0;
+}
+.app-shell *,.mobile-nav,dialog,dialog *,.app-shell *:before,.app-shell *:after { background-image:none!important; }
+body[data-page],body[data-page] .main-shell,body[data-page] main { background:#f8fafb; color:#29364d; }
+#sidebar { background:#fff; border-color:#dce2e8; }
+.app-wordmark,.app-wordmark>span,.coach-word,.coach-word>span,.brand,.brand small { color:#29364d; }
+#sidebar .nav-item { color:#4b576b; }
+#sidebar .nav-item.active,#sidebar .nav-item.active .icon { background:#C1EFFF; color:#29364d; }
+#sidebar .side-user .avatar { background:#FFE9AE; color:#29364d; }
+.sidebar-term { background:#FFE9AE; color:#29364d; }
+.topbar,body[data-page=home] .topbar { background:#fff; border-color:#dce2e8; }
+.coach-header-avatar { background:#C1EFFF; border-color:#a9cedb; color:#29364d; }
+.coach-mobile-brand .app-wordmark,.coach-mobile-brand .app-wordmark>span,body[data-page=home] .coach-mobile-brand .app-wordmark,body[data-page=home] .coach-mobile-brand .app-wordmark>span,body[data-page=home] .mobile-settings { color:#29364d; }
+.button,.button:not(.primary):not(.green),.button.primary,.button.green,.button.danger,.attendance-save .button.green,.score-save-bar .button { background:#fff; border-color:#aeb9c7; color:#29364d; box-shadow:none; }
+.button.primary,.button.green,.attendance-save .button.green,.score-save-bar .button { background:#FFB3B3; border-color:#cc858e; color:#29364d; }
+.button.primary:hover,.button.green:hover { background:#FFDBA4; border-color:#9a7956; color:#29364d; }
+.button.danger { background:#FFB3B3; border:2px solid #a4374c; color:#742236; }
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { outline:3px solid #29364d; outline-offset:3px; }
+.button:disabled,.attendance-save .button:disabled { background:#e9edf2; color:#667083; border-color:#d1d9e2; }
+.card,.board,.reference-card,.report-details,.room-card,.setting-card { background:#fff; border:1px solid #dce2e8; box-shadow:none; }
+main h1,main h2,main h3,.heading h1,.coach-course-heading h1,.coach-course-heading b,.person b { color:#29364d; }
+.heading>div>p,.muted,.notice,.app-footer { color:#596477; }
+.heading { padding:15px; background:#C1EFFF; border-radius:14px; }
+.notice { background:#FFE9AE; border:1px solid #d8c58d; }
+input,select,textarea { color:#29364d; accent-color:#29364d; }
+.course-strip .subject-banner { background:#C1EFFF; color:#29364d; border-color:#a6cbd8; }
+.subject-banner .sport { background:#fff; color:#29364d; }
+.room-chip { background:#fff; border:1px solid #b7c5cf; color:#29364d; }
+.room-chip.active { background:#FFB3B3; border-color:#29364d; color:#29364d; }
+.room-chip.active small,.room-chip.active strong { color:#29364d; }
+.course-tabs,.score-mode-tabs,.report-tabs { background:#edf1f5; }
+.course-tabs a.active,.score-mode.active,.score-mode-tabs .score-mode.active,.report-tabs .primary,.subject-grade-options .primary { background:#C1EFFF; color:#29364d; border-color:#29364d; }
+/* Home: distinct solid cards, without changing the classroom-first order. */
+.dashboard-brand-banner { background:#C1EFFF; border-color:#a8ccda; }
+.dashboard-brand-banner:before,.dashboard-brand-banner:after { display:none; }
+.dashboard-brand-word,.dashboard-brand-word>span,.dashboard-mobile-greeting,.dashboard-brand-tagline,.dashboard-teacher-greeting { color:#29364d; }
+.dashboard-teacher-art { bottom:-8px; }
+.dashboard-day-summary { background:#FFE9AE; border-color:#ddcd96; }
+.dashboard-date>.icon,.dashboard-day-summary>a b,.dashboard-panel-heading h2>.icon,.dashboard-panel-heading>a,.period-start,.subjects-section .dashboard-panel-heading>a { color:#29364d; }
+.dashboard-day-summary>a { border-color:#cbbb8e; }
+.dashboard-panel { background:#fff; border-color:#dce2e8; }
+.dashboard-period,.dashboard-period:nth-child(4n+1) { background:#FFB3B3; border-color:#e799a0; }
+.dashboard-period:nth-child(4n+2) { background:#FFDBA4; border-color:#e2be86; }
+.dashboard-period:nth-child(4n+3) { background:#FFE9AE; border-color:#ddcd96; }
+.dashboard-period:nth-child(4n) { background:#C1EFFF; border-color:#a8ccda; }
+.dashboard-period>span { background:#fff; color:#29364d; }
+.dashboard-period>b,.dashboard-period>strong,.dashboard-period small,.period-start { color:#29364d; }
+body[data-page=home] .subject-card,body[data-page=home] .subject-card.subject-pink,body[data-page=home] .subject-card:nth-child(4n+1) { background:#FFB3B3; border-color:#e799a0; }
+body[data-page=home] .subject-card.subject-blue,body[data-page=home] .subject-card:nth-child(4n+2) { background:#C1EFFF; border-color:#a8ccda; }
+body[data-page=home] .subject-card:nth-child(4n+3) { background:#FFDBA4; border-color:#e2be86; }
+body[data-page=home] .subject-card:nth-child(4n) { background:#FFE9AE; border-color:#ddcd96; }
+.professional-subject-icon { background:#fff; box-shadow:none; }
+.subject-copy b,.subject-copy>small,.subject-copy em,.subject-blue .subject-copy em,.subject-card .chevron { color:#29364d; }
+.today-list>button,.today-list>button:last-child { background:#f3f6f8; border:1px solid #dce2e8; }
+.period-pill,.period-pill.period-0 { background:#FFB3B3; color:#29364d; }.period-pill.period-1 { background:#FFDBA4; }.period-pill.period-2 { background:#FFE9AE; }.period-pill.period-3 { background:#C1EFFF; }
+.todo-course,.todo-time { background:transparent; color:#29364d; }
+.dashboard-task-table td:first-child button { color:#29364d; }
+/* Attendance uses words, check marks and outlines as well as color. */
+.coach-course-heading { background:#fff; border-color:#dce2e8; }
+.session-control { background:#C1EFFF; border:1px solid #a8ccda; padding:12px; border-radius:12px; }
+.session-symbol { background:#fff; color:#29364d; }
+.date-control input,.date-control select { background:#fff; color:#29364d; }
+.status-count.present,.coach-report-count.present { background:#C1EFFF; border-color:#a8ccda; }
+.status-count.absent,.coach-report-count.absent { background:#FFB3B3; border-color:#e799a0; }
+.status-count.other,.status-count.leave,.status-count.late,.coach-report-count.leave { background:#FFDBA4; border-color:#e2be86; }
+.status-count.total,.status-count.pending,.coach-report-count.total { background:#FFE9AE; border-color:#ddcd96; }
+.status-count b,.status-count.present b,.status-count.absent b,.status-count.other b,.status-count.late b,.status-count span,.coach-report-count b,.coach-report-count span { color:#29364d; }
+.attendance-row,.attendance-row:nth-child(odd) { background:#fff; border-color:#dce2e8; }
+.attendance-roster-head { background:#C1EFFF; color:#29364d; }
+.attendance-choice.present,.attendance-choice.absent,.attendance-choice.other { background:#fff; border-color:#aeb9c7; color:#29364d; }
+.attendance-choice.present.selected { background:#C1EFFF; border:2px solid #29364d; color:#29364d; box-shadow:none; }
+.attendance-choice.absent.selected { background:#FFB3B3; border:2px solid #742236; color:#742236; box-shadow:none; }
+.attendance-choice.other.selected { background:#FFDBA4; border:2px solid #78532d; color:#5f4227; box-shadow:none; }
+.search-field { background:#fff; border-color:#b9c4d0; }.search-field .icon,.quick-tool .icon { color:#29364d; }
+.attendance-save,.score-save-bar { background:#fff; border-color:#dce2e8; backdrop-filter:none; }
+/* Scores, reports, timetable, lists and settings share the same surfaces. */
+.score-select-label,.score-board .score-select-label { background:#FFE9AE; border-color:#ddcd96; }
+.score-table th,table th,.score-roster-head { background:#C1EFFF; color:#29364d; }
+.score-table td,table td { border-color:#e0e5eb; }
+.score-input,.single-score-table .score-input { background:#fff; border-color:#aeb9c7; color:#29364d; }
+.score-input:placeholder-shown,.score-input:invalid { border:2px solid #b36b79; }
+.coach-average-card,.coach-report-task,.coach-chart-card,.summary-panel { background:#FFE9AE; border:1px solid #ddcd96; }
+.coach-profile-card { background:#C1EFFF; border-color:#a8ccda; }
+.professional-profile-icon { background:#FFB3B3; color:#29364d; }
+.coach-setting-row,.button.coach-setting-row { background:#fff; color:#29364d; border-color:#dce2e8; }
+.coach-setting-row>.icon { color:#29364d; }.coach-setting-row:hover { background:#FFE9AE; color:#29364d; }
+.setting-card:nth-of-type(4n+1)>h2,.room-card:nth-child(4n+1) { background:#FFB3B3; }
+.setting-card:nth-of-type(4n+2)>h2,.room-card:nth-child(4n+2) { background:#C1EFFF; }
+.setting-card:nth-of-type(4n+3)>h2,.room-card:nth-child(4n+3) { background:#FFDBA4; }
+.setting-card:nth-of-type(4n)>h2,.room-card:nth-child(4n) { background:#FFE9AE; }
+.schedule-card,.schedule-day,.lesson-card { background:#FFE9AE; color:#29364d; border-color:#ddcd96; }
+.schedule-card:nth-child(2n),.lesson-card:nth-child(2n) { background:#C1EFFF; }
+.quick-status-grid .quick-status { background:#C1EFFF; color:#29364d; border-color:#a8ccda; }
+.quick-status-grid .quick-status:nth-child(2n) { background:#FFDBA4; }.quick-status-grid .quick-status:nth-child(3n) { background:#FFB3B3; }.quick-status-grid .quick-status:nth-child(4n) { background:#FFE9AE; }
+.dashboard-status.ready,.dashboard-status.pending,.dashboard-status.neutral { background:#C1EFFF; color:#29364d; }
+.dashboard-status.pending { background:#FFE9AE; }
+.mobile-nav { background:#fff; border-color:#dce2e8; }
+.mobile-nav a.active,.mobile-nav a.active .icon { background:transparent; color:#29364d; }
+.mobile-nav a.active { background:#C1EFFF; border-radius:12px; font-weight:750; }
+.summary-ring { background:var(--ring)!important; }.summary-ring>div { background:#fff; }
+.coach-bar,.summary-bar,.grade-bar { background:#FFB3B3; }
+.day-stack .good { background:#C1EFFF; }.day-stack .bad { background:#FFB3B3; }
+dialog { background:#fff; border:1px solid #b9c4d0; border-radius:16px; }.dialog-head { background:#FFE9AE; }
+@media(max-width:850px) {
+ .dashboard-brand-banner { background:#C1EFFF; }.dashboard-brand-banner:before { display:none; }
+ .dashboard-mobile-greeting,.dashboard-brand-tagline,.dashboard-teacher-greeting { color:#29364d; }
+ .dashboard-day-summary { background:#FFE9AE; }
+ .dashboard-panel,body[data-page=home] .subjects-section,body[data-page=home] .today-todo { border-color:#dce2e8; }
+ .session-control { padding:12px; }.session-control .date-control input,.session-control .date-control select { background:#fff; font-size:16px; }
+ .coach-course-heading { background:#fff; }
+ .attendance-choice.present.selected { background:#C1EFFF; color:#29364d; border:2px solid #29364d; }
+ .attendance-choice.absent.selected { background:#FFB3B3; color:#742236; border:2px solid #742236; }
+ .attendance-choice.other.selected { background:#FFDBA4; color:#5f4227; border:2px solid #78532d; }
+ .attendance-save .button.green,.score-save-bar .button { background:#FFB3B3; color:#29364d; border-color:#cc858e; }
+ .attendance-save .button:disabled { background:#e9edf2; color:#667083; border-color:#d1d9e2; }
+ .mobile-nav a.active,.mobile-nav a.active .icon { color:#29364d; }
+}
+/* Calendar brand: soft rounded forms echo the supplied mascot. */
+:root { --radius-card:20px; --radius-control:12px; --radius-small:10px; }
+.card,.board,.reference-card,.report-details,.room-card,.setting-card,.dashboard-panel,.coach-report-task,.coach-chart-card,.coach-average-card,.coach-profile-card { border-radius:20px; }
+.button,.button.small,.room-chip,.score-mode,.score-input,.single-score-table .score-input,input,select,textarea,.search-field { border-radius:12px; }
+.brand-logo,.coach-mobile-brand img { border-radius:12px; background:#fff; }
+.brand-logo { width:43px; height:43px; }.coach-mobile-brand img { width:38px; height:38px; }
+.dashboard-brand-banner { border-radius:22px; }
+.dashboard-teacher-art { width:270px; height:230px; right:30px; bottom:0; }
+.dashboard-period { border-radius:16px; }.dashboard-period>span { border-radius:9px; }
+body[data-page=home] .subject-card { border-radius:18px; }
+.professional-subject-icon { border-radius:16px; border:1px solid #ffffff; }
+.status-count,.coach-report-count { border-radius:16px; }
+.board-head { background:#C1EFFF; border-radius:18px 18px 0 0; padding:16px; color:#29364d; }
+.score-search,.attendance-tools { background:#fff; }
+.report-chart-head h3,.coach-report-heading,.coach-report-title,.summary-legend,.summary-legend b { color:#29364d; }
+.coach-report-card,.coach-report-counts,.report-summary { border-color:#dce2e8; }
+.coach-report-task { background:#FFE9AE; }
+.coach-report-count:nth-child(4n+1) { background:#C1EFFF; }.coach-report-count:nth-child(4n+2) { background:#FFB3B3; }.coach-report-count:nth-child(4n+3) { background:#FFDBA4; }.coach-report-count:nth-child(4n) { background:#FFE9AE; }
+.coach-report-count .icon,.coach-report-count strong,.coach-report-count small { color:#29364d; }
+.coach-report-export .button,.report-export .button { color:#29364d; background:#C1EFFF; }
+.coach-report-export .button:last-child,.report-export .button:last-child { background:#FFB3B3; }
+.setting-card>h2 { color:#29364d; border-radius:12px; padding:12px; }
+.coach-setting-row>.icon { background:#FFE9AE; width:32px; height:32px; padding:6px; border-radius:10px; }
+.coach-setting-row:nth-child(4n+2)>.icon { background:#C1EFFF; }.coach-setting-row:nth-child(4n+3)>.icon { background:#FFB3B3; }.coach-setting-row:nth-child(4n)>.icon { background:#FFDBA4; }
+.quick-status-grid .quick-status:hover { background:#FFE9AE; border-color:#29364d; color:#29364d; }
+@media(max-width:850px) {
+ .dashboard-teacher-art { width:155px; height:160px; right:-1px; bottom:0; }
+ .dashboard-brand-banner>div { max-width:58%; }.dashboard-brand-tagline { font-size:12px; }
+ .dashboard-panel,body[data-page=home] .subjects-section,body[data-page=home] .today-todo { border-radius:18px; }
+ .attendance-row,.attendance-row:nth-child(odd),.attendance-row:last-child { border-radius:16px; }
+ .attendance-choice { border-radius:12px; }.attendance-save .button.green,.score-save-bar .button { border-radius:15px; }
+ .coach-course-heading .button { border-radius:12px; }
+}
+@media(max-width:360px) { .dashboard-teacher-art { width:130px; height:144px; right:-4px; }.dashboard-brand-banner>div { max-width:58%; }.dashboard-brand-tagline { font-size:11px; } }
+.coach-average-card>.icon:last-child { color:#29364d; }
+.coach-histogram i { background:#FFB3B3; border:1px solid #bd7a87; border-radius:9px 9px 0 0; }
+.coach-task-metrics>div { background:#fff; border:1px solid #d9c898; border-radius:12px; }
+.coach-report-task .export-pdf { background:#FFB3B3; border-color:#cc858e; color:#29364d; }
+.coach-report-task .export-excel { background:#C1EFFF; border-color:#a8ccda; color:#29364d; }
+.coach-report-count.total { background:#FFE9AE; }.coach-report-count.present { background:#C1EFFF; }.coach-report-count.absent { background:#FFB3B3; }.coach-report-count.leave { background:#FFDBA4; }
+.coach-report-count>span,.coach-report-count.present>span,.coach-report-count.absent>span,.coach-report-count.leave>span { background:#fff; color:#29364d; border-radius:10px; }
+@media(max-width:850px) {
+ .single-score-table .score-input { min-height:44px; height:44px; font-size:16px; width:76px; border-radius:12px; }
+ .score-table .person b { font-size:14px; line-height:1.4; }
+ .score-choice select,.report-filters select { min-height:44px; font-size:16px; }
+}

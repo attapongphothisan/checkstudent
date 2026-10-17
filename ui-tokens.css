@@ -1,0 +1,74 @@
+/* Global design tokens. Change these values to theme every app page. */
+:root {
+  --brand-pink:#f58ab5; --brand-yellow:#ffd357; --brand-green:#62c957;
+  --brand-wash:linear-gradient(120deg,#e1f3ff 0%,#f8faff 55%,#ffedf5 100%);
+  /* Text and surfaces */
+  --blue: #168de2;
+  --navy: #173957;
+  --ink: #213e58;
+  --muted: #647f97;
+  --line: #dfedff;
+  --wash: #f4f9ff;
+  --surface: #fff;
+  --surface-soft: #f8fcff;
+  --surface-tint: #edf6ff;
+  --border-control: #cee3ff;
+  --text-on-color: #fff;
+  --focus: #75c8ff;
+  /* Actions */
+  --primary-start: #47b2f5;
+  --primary-end: #1685d8;
+  --primary-fill: linear-gradient(165deg, var(--primary-start), var(--primary-end));
+  --green: #35bd68;
+  --success-start: #73cf54;
+  --success-end: #24ae67;
+  --success-fill: linear-gradient(160deg, var(--success-start), var(--success-end));
+  --red: #ef699a;
+  --danger-start: #ffa0c2;
+  --danger-end: #ed669b;
+  --danger-fill: linear-gradient(150deg, var(--danger-start), var(--danger-end));
+  --warning-start: #ffdf72;
+  --warning-end: #f7b928;
+  --warning-fill: linear-gradient(150deg, var(--warning-start), var(--warning-end));
+  /* Semantic states used by badges, counters and student profiles */
+  --success-soft: #e1fbef;
+  --success-text: #008442;
+  --danger-soft: #ffedf3;
+  --danger-text: #c42149;
+  --danger-line: #ffd7e2;
+  --warning-soft: #fff4d9;
+  --warning-text: #a86200;
+  --neutral-soft: #e8f1ff;
+  --neutral-text: #21599d;
+  --leave-soft: #f0e6ff;
+  --leave-text: #8752c8;
+  --skip-soft: #ffeedb;
+  --skip-text: #a95a16;
+  /* Geometry, spacing and type */
+  --radius-small: 10px;
+  --radius-control: 14px;
+  --radius-panel: 18px;
+  --radius-card: 22px;
+  --radius-hero: 24px;
+  --radius-round: 50%;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --touch-target: 44px;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, sans-serif;
+  --font-body: 14px;
+  --font-small: 12px;
+  --font-title: 32px;
+  --font-section: 20px;
+  --font-weight-action: 700;
+  --shadow: 0 5px 20px #4491b410;
+  --shadow-action: 0 4px 12px #168de222, inset 0 2px 2px #ffffff33;
+  --nav-offset: calc(72px + env(safe-area-inset-bottom, 0px));
+}
+
+@media(max-width:850px) {
+  :root { --font-title:24px; }
+}
