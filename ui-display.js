@@ -2,8 +2,8 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.DisplayUI=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
  function subject(name){
   const text=String(name).toLowerCase();
-  if(/พลศึกษา|กีฬา|physical|sport/.test(text))return {icon:'physical',tone:'blue'};
-  if(/สุขศึกษา|สุขภาพ|health/.test(text))return {icon:'wellness',tone:'pink'};
+  if(/พลศึกษา|กีฬา|physical|sport/.test(text))return {icon:'physical',tone:'blue',image:'assets/saas-v79/physical.png'};
+  if(/สุขศึกษา|สุขภาพ|health/.test(text))return {icon:'wellness',tone:'pink',image:'assets/saas-v79/health.png'};
   if(/คอมพิวเตอร์|เทคโนโลยี|computer|coding|คณิต|math/.test(text))return {icon:'scores',tone:'neutral'};
   if(/ศิลปะ|ดนตรี|art|music/.test(text))return {icon:'lessons',tone:'neutral'};
   return {icon:'guide',tone:'neutral'};
