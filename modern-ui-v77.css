@@ -127,3 +127,9 @@ body[data-page] .mobile-nav a.active{background:#eef2ff;color:#4f46e5}body[data-
 @media(max-width:850px){.next-class{border-radius:14px}.workspace-panel,.card,.board,.reference-card,.setting-card{border-radius:14px}}
 
 .modern-subject-icon img{display:block;width:48px;height:48px;object-fit:contain}.modern-subject-icon:has(img){width:52px;height:52px;background:transparent;flex:none}.brand-logo{object-fit:contain}
+@media(max-width:850px){
+ .week-grid{grid-template-columns:minmax(0,1fr);overflow-x:visible;gap:10px}
+ .weekday{min-width:0;padding:12px}
+ .weekday>h3{margin:-12px -12px 10px;padding:11px 12px;border-radius:11px 11px 0 0}
+ .week-item .actions .button{min-height:42px}
+}

@@ -1,4 +1,4 @@
-const CACHE='checkeng-app-v2.0.0';
+const CACHE='checkeng-app-v2.0.1';
 const FILES=["./","./index.html","./ui-tokens.css","./styles.css","./modern-ui-v77.css","./assets/logo-indigo.svg","./assets/saas-v80/01-checkmark.png","./assets/saas-v79/health.png","./assets/saas-v79/physical.png","./assets/fonts/Prompt-400.ttf","./assets/fonts/Prompt-500.ttf","./assets/fonts/Prompt-600.ttf","./assets/fonts/Prompt-700.ttf","./assets/fonts/OFL.txt","./ui-display.js","./ui-summary.js","./core.js","./app.js","./report-export.js","./student-import.js","./vendor/xlsx.full.min.js","./templates/students-example.xlsx","./templates/students-example.csv","./manifest.webmanifest","./SETUP.html"];
 // Safari navigation must receive a response without a followed-redirect flag.
 async function directResponse(response){
