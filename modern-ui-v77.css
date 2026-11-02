@@ -133,3 +133,19 @@ body[data-page] .mobile-nav a.active{background:#eef2ff;color:#4f46e5}body[data-
  .weekday>h3{margin:-12px -12px 10px;padding:11px 12px;border-radius:11px 11px 0 0}
  .week-item .actions .button{min-height:42px}
 }
+
+/* Daily timetable: keep every scheduled period available, including completed ones. */
+.home-schedule .next-class-header{justify-content:space-between;flex-wrap:wrap}
+.home-schedule-list{display:grid;gap:10px}
+.home-schedule-row{display:grid;grid-template-columns:60px minmax(0,1fr) auto;align-items:center;gap:14px;width:100%;padding:14px;text-align:left;font:inherit;color:#1e293b;background:#fff;border:1px solid #e2e8f0;border-radius:12px;cursor:pointer}
+.home-schedule-row:hover{background:#f8faff;border-color:#a5b4fc}
+.home-schedule-row:focus-visible{outline:3px solid #6366f1;outline-offset:3px}
+.home-schedule-row .next-class-period{width:60px;height:64px}
+.home-schedule-row .next-class-period b{font-size:27px}
+.home-schedule-detail{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0;overflow-wrap:anywhere}
+.home-schedule-detail>b{font-size:16px;line-height:1.5}
+.home-schedule-detail>small{font-size:12px;color:#64748b}
+.home-schedule .next-class-status.completed{background:#ecfdf5;border-color:#a7f3d0;color:#047857}
+.home-schedule-open{display:flex;align-items:center;gap:6px;color:#4f46e5;font-size:12px;white-space:nowrap}
+.home-schedule-open .icon{width:17px;height:17px}
+@media(max-width:600px){.home-schedule-row{grid-template-columns:48px minmax(0,1fr);gap:10px;padding:12px}.home-schedule-row .next-class-period{width:48px;height:58px}.home-schedule-detail>b{font-size:14px}.home-schedule-open{grid-column:2;justify-self:end}}
