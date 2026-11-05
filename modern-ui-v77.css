@@ -149,3 +149,22 @@ body[data-page] .mobile-nav a.active{background:#eef2ff;color:#4f46e5}body[data-
 .home-schedule-open{display:flex;align-items:center;gap:6px;color:#4f46e5;font-size:12px;white-space:nowrap}
 .home-schedule-open .icon{width:17px;height:17px}
 @media(max-width:600px){.home-schedule-row{grid-template-columns:48px minmax(0,1fr);gap:10px;padding:12px}.home-schedule-row .next-class-period{width:48px;height:58px}.home-schedule-detail>b{font-size:14px}.home-schedule-open{grid-column:2;justify-self:end}}
+
+/* Daily teaching progress and distinct navigation for each screen size. */
+.daily-progress{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.daily-progress span{padding:7px 11px;border:1px solid #e2e8f0;border-radius:9px;background:#fff;color:#475569;font-size:13px}
+.daily-progress .done{background:#ecfdf5;color:#047857;border-color:#a7f3d0}
+.home-schedule-row.is-next{border:2px solid #6366f1;background:#f5f6ff}
+.lesson-next-label{font-size:12px;font-weight:600;color:#4338ca}
+.home-schedule .next-class-status.in-progress{background:#fffbeb;color:#92400e;border-color:#fcd34d}
+.home-compact-heading .muted{margin:6px 0;color:#475569}
+.home-schedule-detail>small,.panel-heading p,.home-class-empty p{color:#475569}
+.workspace-empty{padding-top:24px;padding-bottom:24px;min-height:0}
+@media(min-width:851px){
+ body[data-page] .mobile-nav{display:none}
+ .main-shell{padding-bottom:20px}
+}
+@media(max-width:850px){
+ .daily-progress{margin-top:10px}
+ .home-schedule-row{min-height:88px}
+}
